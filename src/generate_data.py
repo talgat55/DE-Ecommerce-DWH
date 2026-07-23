@@ -33,7 +33,7 @@ def generate_products(count: int = 100):
             "product_id": product_id,
             "product_name": fake.word().title(),
             "category": random.choice(categories),
-            "price": random.choice(categories),
+            "price": round(random.uniform(5, 500), 2),
             "created_at": fake.date_time_between(start_date="-2y", end_date="now")
         })
 
