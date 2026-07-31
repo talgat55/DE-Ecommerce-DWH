@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS dim_product (
     category TEXT NOT NULL,
     price NUMERIC(12, 2) NOT NULL,
 
-    source_create_at TIMESTAMP NOT NULL,
+    source_created_at TIMESTAMP NOT NULL,
     dwh_created_at TIMESTAMP NOT NULL DEFAULT NOW(),
     dwh_updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );

@@ -1,3 +1,7 @@
+DROP MATERIALIZED VIEW IF EXISTS mart_sales_by_day;
+DROP MATERIALIZED VIEW IF EXISTS mart_top_products;
+DROP MATERIALIZED VIEW IF EXISTS mart_customer_ltv;
+
 CREATE MATERIALIZED VIEW mart_sales_by_day AS
 SELECT
     d.full_date,

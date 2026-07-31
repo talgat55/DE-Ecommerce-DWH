@@ -32,7 +32,7 @@ JOIN dim_customer dc
 JOIN dim_product dp
     ON oi.product_id = dp.product_id
 JOIN dim_date dd
-    ON o.order_date::date = dd.full_date
+    ON o.order_created_at::date = dd.full_date
 LEFT JOIN stg_payments p
     ON o.order_id = p.order_id
 LEFT JOIN dim_payment_method dpm

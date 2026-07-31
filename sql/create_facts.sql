@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS fact_order_items (
     order_date_key INTEGER NOT NULL,
     payment_method_key BIGINT,
 
-    order_status INTEGER NOT NULL,
+    order_status TEXT NOT NULL,
     quantity INTEGER NOT NULL,
     unit_price NUMERIC(12, 2) NOT NULL,
     line_total NUMERIC(14, 2) NOT NULL,
